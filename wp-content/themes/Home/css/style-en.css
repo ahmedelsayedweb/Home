@@ -1,0 +1,31 @@
+body {
+    color: #333;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: auto;
+    line-height: 1.55;
+    direction: ltr;
+}
+.pull-left {
+    float: right!important;
+}
+.toplinks {
+    line-height: normal;
+    padding: 6px 0 0;
+    float: right;
+}
+.welcome-msg {
+    text-align: left;
+	direction: ltr;
+}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required{
+	text-align: left;
+	float: left;
+}
+input.wpcf7-form-control.wpcf7-submit{
+	float: left;
+}
+.descp{
+	direction: ltr;
+}
