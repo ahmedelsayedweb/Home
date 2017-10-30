@@ -29,3 +29,12 @@ input.wpcf7-form-control.wpcf7-submit{
 .descp{
 	direction: ltr;
 }
+.category-product .navbar-nav > li:first-child{
+	float: left;
+}
+.category-product .nav.navbar-nav{
+	text-align: right;
+}
+.category-products ul.products-grid li.item{
+	float: left;
+}

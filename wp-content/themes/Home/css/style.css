@@ -2685,7 +2685,7 @@ ul.level1 {
 }
 .category-product .nav.navbar-nav {
 	width: 100%;
-	text-align: right;
+	text-align: left;
 	padding-right: 0px;
 	border-bottom: 1px solid #e5e5e5;
 	padding: 25px;
@@ -3176,6 +3176,7 @@ margin:
 .products-grid .item .item-inner {
 	position: relative;
 	text-align: center;
+	min-height: 400px;
 	overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.29);
 }
@@ -3405,6 +3406,10 @@ margin:
 .sale-box {
 	right: 0;
 	top: 0px;
+}
+.regular-price p {
+    width: 82%;
+    margin: auto;
 }
 .new-label {
 	font-size: 10px;
@@ -16921,7 +16926,7 @@ input.wpcf7-form-control.wpcf7-submit {
     font-size: 20px;
     border-radius: 10px;
 }
-i.fa.fa-phone,i.fa.fa-envelope-o,i.fa.fa-location-arrow {
+.mapss i.fa.fa-phone,.mapss i.fa.fa-envelope-o,.mapss i.fa.fa-location-arrow {
     padding: 10px 8px 10px 0px;
 	font-size: 20px;
 }

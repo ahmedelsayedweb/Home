@@ -39,7 +39,14 @@
 <div class="clearfix"></div>
 </div>
 <div class="social">
-<h4>تابعنا</h4>
+	<?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		echo '<h4>تابعنا</h4>';
+		}elseif($lang == 'en'){
+		echo '<h4>Follow us</h4>';
+	};
+	?> 
 <ul>
 <li class="pull-right facebook" >
 <a target="_blank" href='<?php echo $facebook; ?>' style="border: 1px solid #666; border-radius: 50%; height: 28px; width:28px;" class="styy"></a>
@@ -68,17 +75,32 @@
 	<h4><?php echo $title_about; ?></h4>
 <div class="textwidget rtl">
 	<?php echo $description_about; ?>
-	<a style="color:#fff !important;" href="#">المزيد</a>
+	<?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		echo '<a style="color:#fff !important;" href="http://localhost/Home/en/about-us/">المزيد</a>';
+		}elseif($lang == 'en'){
+		echo '<a style="color:#fff !important;" href="http://localhost/Home/aboutar/">More</a>';
+	};
+	?> 
 </div>
 </aside>
 </div>
 
 
 <div class=" col-lg-4 footer-column text-right pull-right">
-<aside id="text-3" class="widget widget_text"><h4>جديد من مشروعاتنا</h4>
+<aside id="text-3" class="widget widget_text">
+	<?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		echo '<h4>جديد من مشروعاتنا</h4>';
+		}elseif($lang == 'en'){
+		echo '<h4>New of our projects</h4>';
+	};
+	?> 
 <div class="textwidget">
 <a href="<?php echo $link_footer; ?>">
-<img src="<?php echo $images_footer; ?>" alt="قطاميه جيت" class="img-responsive"/>
+<img src="<?php echo $images_footer; ?>" class="img-responsive"/>
 <h3><?php echo $title_footer; ?></h3>
 </a>
 <p><?php echo $description_footer; ?></p>
@@ -114,7 +136,15 @@
 <div class="footer-bottom">
 <div class="container">
 <div class="row text-center">
-<div class="col-sm-12 col-xs-12 coppyright">2016 جميع الحقوق محفوظة لدى psolvingegypt</div>
+	<?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'en'){
+		echo '<div class="col-sm-12 col-xs-12 coppyright">2017 All rights reserved to psolvingegypt</div>';
+		}elseif($lang == 'ar'){
+		echo '<div class="col-sm-12 col-xs-12 coppyright">2017 جميع الحقوق محفوظة لدى psolvingegypt</div>';
+	};
+	?> 
+
 </div>
 </div>
 </div>

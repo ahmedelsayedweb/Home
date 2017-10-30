@@ -127,7 +127,15 @@ fullScreenOffsetContainer: ''
 						<ul class="nav navbar-nav">
 							<li>
 								<div class="new_title pull-right">
-									<h2>مشروعاتنا</h2>
+									<?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		echo '<h2>مشروعاتنا</h2>';
+		}elseif($lang == 'en'){
+		echo '<h2>Our Projects</h2>';
+	};
+	?> 
+									
 								</div>
 							</li>
 							<?php if (!empty($cats)){
@@ -145,7 +153,7 @@ fullScreenOffsetContainer: ''
 									if(!in_array($slug, $temp)){
 										$temp [] = $slug;
 								?>
-							<li class="pull-left <?php echo $class; ?>">
+							<li class="<?php echo $class; ?>">
 								<a href="#<?php echo $slug; ?>" data-toggle="tab"><?php echo $name; ?></a>
 							</li>
 							<?php }?>
@@ -207,7 +215,15 @@ fullScreenOffsetContainer: ''
 					</div>
 					<div class="action">
 						<a class="single_add_to_cart_button add_to_cart_button  product_type_simple ajax_add_to_cart button btn-cart" href='<?php the_permalink(); ?>'>
-							<span>التفاصيل</span>
+									<?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		echo '<span>التفاصيل</span>';
+		}elseif($lang == 'en'){
+		echo '<span>Details</span>';
+	};
+	?> 
+							
 						</a>
 
 					</div>
@@ -243,7 +259,15 @@ fullScreenOffsetContainer: ''
 <ul class="nav navbar-nav" style="padding: 10px !important;">
 <li>
 <div class="new_title pull-right">
-<h2>تجارى و ادارى</h2>
+		<?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		echo '<h2>تجارى و ادارى</h2>';
+		}elseif($lang == 'en'){
+		echo '<h2>Commercial and administrative</h2>';
+	};
+	?> 
+
 </div>
 </li>
 </ul>
@@ -256,7 +280,12 @@ fullScreenOffsetContainer: ''
 <div class="category-products">
 <ul class="products-grid">
 	<?php
-	     $term = get_term_by( 'slug', 'ar_commercial' , 'category' );
+	$lang = custom_get_current_lang();
+	if ($lang == 'ar'){
+		$term = get_term_by( 'slug', 'ar_commercial' , 'category' );
+		}elseif($lang == 'en'){
+		$term = get_term_by( 'slug', 'commercial-and-administrative' , 'category' );
+	};
 //	print_r($term);exit;
 	$args = array( 'posts_per_page' => 4, 'tax_query' => array(
        array(
